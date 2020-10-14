@@ -19,7 +19,7 @@ def instructions():
     # output parameters: None
     # Author: Fiona
     # Modified:
-    print("Enter the shape and related values to determine volume.")
+    print("Enter the shape and related values to determine volume.",end="")
     print("Then you will get the volume of the shape.")
 
     return None
@@ -76,16 +76,21 @@ def VPyramid():
     volume==(float(length)*float(width)*float(height))/3
     return volume
 
+import os
+
 def main():
     # main block of code that will run your program and control program flow
     # You will need to include a while loop to keep repeating the commands until
     # the user chooses to exit
     # Author: Fiona
     # Modified: 
-    title()
-    instructions()
-    getInputs(getParams(input("Enter the name of the shape: ")))
-    
+    while 1 > 0:
+        title()
+        instructions()
+        getInputs(getParams(input("Enter the name of the shape: ")))
+        pause = input("Press return to continue")
+        os.system("cls")
+        if 
 
 
 main()
