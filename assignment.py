@@ -54,23 +54,23 @@ def getInputs(questions):
     return measurements
 
 def VSphere():
-    volume
+    volume==(4/3)*math.pi*(float(radius)**3)
     return volume
 
 def VCuboid():
-    volume
+    volume==float(lenghth)*float(height)*float(width)
     return volume
 
 def VCone():
-    volume
+    volume==(math.pi*(float(radius)**2)*float(height))/3
     return volume
 
 def VCylinder():
-    volume
+    volume==math.pi*(float(radius)**2)*float(height)
     return volume
 
 def VPyramid():
-    volume
+    volume==(float(length)*float(width)*float(height))/3
     return volume
 
 def main():
