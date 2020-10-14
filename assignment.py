@@ -2,6 +2,7 @@
 # Volume Calculator
 # Feel free to rename your variables
 
+import math
 
 def title():
     # Will display a title screen
@@ -26,8 +27,17 @@ def getParams(shape):
     # input parameter: string 
     # output parameter: return a list containing the prompts for each shape:
     # example: ["Enter the radius:","Enter the slant height:","Enter the height:"]
-    prompts
-
+    
+    if shape==sphere:
+        prompts="Enter the radius: "
+    if shape==cuboid:
+        prompts="Enter the height: ", "Enter the length: ", "Enter the width: "
+    if shape==cone:
+        prompts="Enter the height: ", "Enter the radius: "
+    if shape==cylinder:
+        prompts="Enter the radius: ", "Enter the height: "
+    if shape==pyramid:
+        prompts="Enter the length: ", "Enter the width: ","Enter the height: "
     return prompts
 
 def getInputs(questions):
