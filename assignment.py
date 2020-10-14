@@ -8,17 +8,20 @@ def title():
     # Will display a title screen
     # input parameters: none needed
     # output parameters: None
-    # Author:
+    # Author: Fiona
     # Modified:
-    
+    print("=====Volume Calculator=====")
     return None
 
 def instructions():
     # Will display instructions
     # input parameters: none needed
     # output parameters: None
-    # Author:
+    # Author: Fiona
     # Modified:
+    print("Enter the shape and related values to determine volume.")
+    print("Then you will get the volume of the shape.")
+
     return None
 
 def getParams(shape):
@@ -50,10 +53,36 @@ def getInputs(questions):
     
     return measurements
 
+def VSphere():
+    volume
+    return volume
+
+def VCuboid():
+    volume
+    return volume
+
+def VCone():
+    volume
+    return volume
+
+def VCylinder():
+    volume
+    return volume
+
+def VPyramid():
+    volume
+    return volume
+
 def main():
     # main block of code that will run your program and control program flow
     # You will need to include a while loop to keep repeating the commands until
     # the user chooses to exit
+    # Author: Fiona
+    # Modified: 
     title()
+    instructions()
+    getInputs(getParams(input("Enter the name of the shape: ")))
+    
+
 
 main()
