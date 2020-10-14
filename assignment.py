@@ -54,23 +54,23 @@ def getInputs(questions):
     return measurements
 
 def VSphere():
-    volume==(4/3)*math.pi*(float(radius)**3)
+    volume == (4/3)*math.pi*(float(radius)**3)
     return volume
 
 def VCuboid():
-    volume==float(lenghth)*float(height)*float(width)
+    volume == float(lenghth)*float(height)*float(width)
     return volume
 
 def VCone():
-    volume==(math.pi*(float(radius)**2)*float(height))/3
+    volume == (math.pi*(float(radius)**2)*float(height))/3
     return volume
 
 def VCylinder():
-    volume==math.pi*(float(radius)**2)*float(height)
+    volume == math.pi*(float(radius)**2)*float(height)
     return volume
 
 def VPyramid():
-    volume==(float(length)*float(width)*float(height))/3
+    volume == (float(length)*float(width)*float(height))/3
     return volume
 
 import os
@@ -85,9 +85,10 @@ def main():
         title()
         instructions()
         getInputs(getParams(input("Enter the name of the shape: ")))
-        pause = input("Press return to continue")
+        pause = input("Press return to continue. Press \"q\" to quit.")
         os.system("cls")
-        if 
+        if pause == "q":
+            break
 
 
 main()
