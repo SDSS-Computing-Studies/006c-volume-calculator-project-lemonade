@@ -49,38 +49,33 @@ def getInputs(questions):
     # It will turn all the input data into a list
     # input parameter: list containing the prompts/questions
     # output parameter: return a list containing all the measurements of the shape
-    global shape
-    shape="Enter the shape: "
-    questions=getParams(shape)
-    print(questions)
-    num=len(questions)
-    List=[]
-    for i in range(0,num):
-        num1=float()
-    measurements
-   
-    
+    for i in questions:
+        measurements = []
+        measurements.append(input(question[i]))
     return measurements
 
-def VSphere():
-    volume == (4/3)*math.pi*(float(radius)**3)
+def VSphere(value):
+    volume == (4/3)*math.pi*(float(value[0])**3)
     return volume
 
-def VCuboid():
-    volume == float(lenghth)*float(height)*float(width)
+def VCuboid(value):
+    volume == float(value[1])*float(value[0])*float(value[2])
     return volume
 
-def VCone():
-    volume == (math.pi*(float(radius)**2)*float(height))/3
+def VCone(value):
+    volume == (math.pi*(float(value[1])**2)*float(value[0]))/3
     return volume
 
-def VCylinder():
-    volume == math.pi*(float(radius)**2)*float(height)
+def VCylinder(value):
+    volume == math.pi*(float(value[0])**2)*float(value[1])
     return volume
 
-def VPyramid():
-    volume == (float(length)*float(width)*float(height))/3
+def VPyramid(value):
+    volume == (float(value[0])*float(value[1])*float(value[2]))/3
     return volume
+
+def Calculate():
+
 
 import os
 
