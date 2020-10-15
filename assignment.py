@@ -87,8 +87,14 @@ def main():
     while 1 > 0:
         title()
         instructions()
+<<<<<<< HEAD
         getInputs(getParams(input("Enter the name of the shape: ")))
         pause = input("Press return to continue")
+=======
+        shape = input("Enter the name of the shape: ")
+        getInputs(getParams(shape))
+        pause = input("Press return to continue. Press \"q\" to quit.")
+>>>>>>> 4bd21a82c526b0c61923cbec274e5b4787698a69
         os.system("cls")
         if 
 
