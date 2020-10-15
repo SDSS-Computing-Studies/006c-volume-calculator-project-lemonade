@@ -1,0 +1,9 @@
+USER MANUAL
+
+The program is a volume calculator. 
+List of the avaliable shapes are provided.
+If the shapes you enter is not on the list, you will be notified "Please try again".
+After you enter the correct shape, you will be asked to enter the dimensions.
+Then you will get the result.
+You can press "Enter" if you want to continue calculate.
+You can also enter "q" if you wnat to quit the program.
