@@ -86,7 +86,13 @@ def main():
     while 1 > 0:
         title()
         instructions()
+        Shapelist = ["sphere", "cuboid", "cone", "cylinder", "pyramid"]
         shape = input("Choose a shape from the list above: ")
+        while shape not in Shapelist:
+            print("The shape is not on the list. Please try again.")
+            shape = input("Choose a shape from the list above: ")
+            if shape in Shapelist:
+                break
         value = getInputs(getParams(shape))
         if shape == "sphere":
             volume = VSphere(value)
