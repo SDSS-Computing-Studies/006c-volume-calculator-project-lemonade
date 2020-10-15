@@ -3,7 +3,7 @@
 # Feel free to rename your variables
 
 import math
-
+import time
 def title():
     # Will display a title screen
     # input parameters: none needed
@@ -21,7 +21,8 @@ def instructions():
     # Modified:
     print("Enter the shape and related values to determine volume.",end="")
     print("Then you will get the volume of the shape.")
-
+    time.sleep(1)
+    print("Available shapes: sphere, cuboid, cone, cylinder, pyramid.")
     return None
 
 def getParams(shape):
@@ -85,7 +86,7 @@ def main():
     while 1 > 0:
         title()
         instructions()
-        shape = input("Enter the name of the shape: ")
+        shape = input("Choose a shape from the list above: ")
         value = getInputs(getParams(shape))
         if shape == "sphere":
             volume = VSphere(value)
