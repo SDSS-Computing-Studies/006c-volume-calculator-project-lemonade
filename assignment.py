@@ -99,7 +99,7 @@ def main():
         if shape == "pyramid":
             volume = VPyramid(value)
         print("The volume of the " + shape + " is " + str(volume))
-        pause = input("Press return to continue. Press \"q\" to quit.")
+        pause = input("Press return to continue. Enter \"q\" to quit.")
         if pause == "q":
             break
     return None
