@@ -49,31 +49,37 @@ def getInputs(questions):
     # It will turn all the input data into a list
     # input parameter: list containing the prompts/questions
     # output parameter: return a list containing all the measurements of the shape
-    measurements=[]
-    for i in :
-        measurements.append(i)
-
+    global shape
+    shape="Enter the shape: "
+    questions=getParams(shape)
+    print(questions)
+    num=len(questions)
+    List=[]
+    for i in range(0,num):
+        num1=float()
+    measurements
+   
     
     return measurements
 
 def VSphere():
-    volume==(4/3)*math.pi*(float(radius)**3)
+    volume == (4/3)*math.pi*(float(radius)**3)
     return volume
 
 def VCuboid():
-    volume==float(lenghth)*float(height)*float(width)
+    volume == float(lenghth)*float(height)*float(width)
     return volume
 
 def VCone():
-    volume==(math.pi*(float(radius)**2)*float(height))/3
+    volume == (math.pi*(float(radius)**2)*float(height))/3
     return volume
 
 def VCylinder():
-    volume==math.pi*(float(radius)**2)*float(height)
+    volume == math.pi*(float(radius)**2)*float(height)
     return volume
 
 def VPyramid():
-    volume==(float(length)*float(width)*float(height))/3
+    volume == (float(length)*float(width)*float(height))/3
     return volume
 
 import os
@@ -87,16 +93,12 @@ def main():
     while 1 > 0:
         title()
         instructions()
-<<<<<<< HEAD
-        getInputs(getParams(input("Enter the name of the shape: ")))
-        pause = input("Press return to continue")
-=======
         shape = input("Enter the name of the shape: ")
         getInputs(getParams(shape))
         pause = input("Press return to continue. Press \"q\" to quit.")
->>>>>>> 4bd21a82c526b0c61923cbec274e5b4787698a69
         os.system("cls")
-        if 
+        if pause == "q":
+            break
 
 
 main()
